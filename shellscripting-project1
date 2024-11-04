@@ -1,0 +1,15 @@
+#!/bin/bash
+###################################################
+#Author: Sri charan
+#Date:4/11/24
+#This script outputs the node health 
+###################################################
+set -x 
+
+df -h
+
+free -g
+
+nproc
+
+ps -ef | grep "root" | awk -F" " '{ print $2}'

@@ -1,0 +1,18 @@
+#!/bin/bash
+#This shell script is about tracking of resources in aws
+#S3 buckets
+#IAM users
+#Lambda 
+#EC3
+
+#Listing s3 buckets
+aws s2 ls
+
+#Listing ec2 instance
+aws ec2 describe-instances
+
+#List lambda functions
+aws lambda list-functions
+
+#list IAM users
+aws iam list-users
